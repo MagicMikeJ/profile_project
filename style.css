@@ -100,12 +100,9 @@ nav {
 
 .link_2 {
   margin: 50px auto;
-  padding-bottom: 50px;
   width: 80%;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
 }
 
 .link_1 h2 {
@@ -120,13 +117,22 @@ nav {
 
 .proj-img {
   display: inline;
-  width: 600px;
+  width: 700px;
+  height: 450px;
+  transition: width 1s, height 1s;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.proj-img:hover {
+  position: relative;
+  width: 800px;
+  height: auto;
+  display: grid;
+  z-index: 999;
+}
+
 .proj-links {
-  display: inline-grid;
   grid-template-columns: auto auto;
   display: grid;
   justify-content: space-evenly;
