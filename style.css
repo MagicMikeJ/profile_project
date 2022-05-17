@@ -28,11 +28,9 @@ nav ul {
 }
 
 nav {
-  display: inline-grid;
   grid-template-columns: auto auto auto;
   display: grid;
   justify-content: space-evenly;
-  font-size: large;
   font-size: 1.5em;
 }
 
@@ -48,7 +46,10 @@ nav {
   grid-row: 1/2;
 }
 
-/* .name h1 {} */
+.name h1 {
+  color: blue;
+  font-weight: bolder;
+}
 
 .name {
   display: grid;
@@ -56,10 +57,8 @@ nav {
   height: 100%;
 }
 
-.item2 {
-  grid-column: 3/4;
-  grid-row: 1 / span 1;
-  border: 40px 100px;
+.nav-cell {
+  grid-area: nav-cell;
   padding: 30px 100px;
 }
 
@@ -118,9 +117,8 @@ nav {
 
 .proj-img {
   display: inline;
-  width: 700px;
-  height: 450px;
-  transition: width 1s, height 1s;
+  width: 300px;
+  transition: width 2s, height 2s;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -139,3 +137,4 @@ nav {
   display: grid;
   justify-content: space-evenly;
 }
+
