@@ -43,70 +43,6 @@ nav {
 /*  gap: 10px;*/
 /*}*/
 
-@media only screen and (max-width: 600px) {
-  .container {
-    display: grid;
-    grid-template-areas:
-      'name-cell'
-      'nav-cell'
-      'pic-cell'
-      'content-cell'
-      'contact-cell';
-    gap: 10px;
-  }
-  h1 {
-    justify-content: space-evenly;
-    position: relative;
-  }
-  .nav-cell-class {
-    text-align: center;
-  }
-  .mypic {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .container {
-    display: grid;
-    grid-template-areas:
-      'name-cell'
-      'nav-cell'
-      'pic-cell'
-      'content-cell'
-      'contact-cell';
-    gap: 10px;
-  }
-  h1 {
-    justify-content: space-evenly;
-    position: relative;
-  }
-  .nav-cell-class {
-    text-align: center;
-  }
-  .mypic {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .container {
-    display: grid;
-    grid-template-areas:
-      'name-cell      nav-cell'
-      'pic-cell       content-cell'
-      'contact-cell   content-cell';
-    grid-template-columns: 300px auto;
-    gap: 10px;
-  }
-}
-
 .name-cell {
   grid-area: name-cell;
 }
@@ -195,5 +131,73 @@ nav {
   display: grid;
   justify-content: space-evenly;
 }
+
+@media only screen and (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      'name-cell      nav-cell'
+      'pic-cell       content-cell'
+      'contact-cell   content-cell';
+    grid-template-columns: 300px auto;
+    gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      'name-cell'
+      'nav-cell'
+      'pic-cell'
+      'content-cell'
+      'contact-cell';
+    gap: 10px;
+  }
+  h1 {
+    text-align: center;
+  }
+
+  .mypic {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      'name-cell'
+      'nav-cell'
+      'pic-cell'
+      'content-cell'
+      'contact-cell';
+    gap: 10px;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  .mypic {
+    flex: 0 10%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .proj-links {
+    display: block;
+    margin: auto;
+    width: 300px;
+    padding: 10px;
+  }
+}
+
+
+
 
 
